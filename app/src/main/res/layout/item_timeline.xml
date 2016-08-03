@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<LinearLayout
+    android:paddingLeft="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_marginLeft="15dp"
+        android:background="#f00"
+        android:layout_width="2dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/text_time"
+        android:text="10:10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/line_end"
+        android:layout_marginLeft="15dp"
+        android:background="#f00"
+        android:layout_width="2dp"
+        android:layout_height="50dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:paddingLeft="75dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_desc"
+            android:text="马克鳗使用Adobe AIR的跨平台技术，只要你的系统安装了Adobe AIR运行时，就能够正常安装和使用马克鳗。 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>
