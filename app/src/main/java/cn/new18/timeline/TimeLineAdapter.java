@@ -1,6 +1,8 @@
 package cn.new18.timeline;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +45,7 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.itemVi
 
         //根据TextView高度动态改变左侧线条高度
         holder.text_desc.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @TargetApi(Build.VERSION_CODES.KITKAT)
             @Override
             public void onGlobalLayout() {
                 holder.text_desc.getViewTreeObserver().removeOnGlobalLayoutListener(this);
